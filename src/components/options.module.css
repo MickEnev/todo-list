@@ -1,0 +1,28 @@
+.buttonContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+    color: #0f172a;
+}
+
+.selectedButton {
+    color: #0f172a;
+    background: white;
+}
+
+.nonSelectedButton {
+    background: rgb(0, 0, 0, 0.3);
+    color: white;
+}
