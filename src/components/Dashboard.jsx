@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import styles from './dashboard.module.css'
 import Options from './Options.jsx'
+import Doing from './doing/Doing.jsx'
 
 export default function Dashboard() {
     const [selection, setSelection] = useState(null)
@@ -16,6 +17,7 @@ export default function Dashboard() {
       <div className={styles.layout}>
         <h1 style={{margin: '0 auto', color: '#F5CC1D'}}>Todo</h1>
         <Options selection={selection} setSelection={onClickHandler}/>
+        {selection == "Doing" ? <Doing/> : "Nothing"}
       </div>
     </div>
   )
